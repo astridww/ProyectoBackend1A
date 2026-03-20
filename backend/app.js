@@ -2,6 +2,7 @@ import express from "express"
 import productsRoutes from "./src/routes/products.js";
 import branchesRoutes from "./src/routes/branches.js";
 import employessRoutes from "./src/routes/employees.js"
+import providersRoutes from "./src/routes/providers.js"
 
 //Ejecutar express
 const app = express();
@@ -12,5 +13,6 @@ app.use(express.json());
 app.use("/api/products", productsRoutes)
 app.use("/api/branches", branchesRoutes)
 app.use("/api/employees", employessRoutes)
+app.use("/api/providers", providersRoutes)
 
 export default app;
